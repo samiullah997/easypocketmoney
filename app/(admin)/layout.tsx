@@ -15,12 +15,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
           </ClerkLoading>
           <ClerkLoaded>
-            <div className="max-w-6xl mx-auto">
+            <div className=" mx-auto">
               <div className="flex flex-col h-screen">
                 <SidebarProvider>
                   <AppSidebar />
-                  <main>
-                    <SidebarTrigger />
+                  <SidebarTrigger />
+                  <main className="flex flex-col w-full justify-center items-center bg-red-700">
                     {children}
                   </main>
                 </SidebarProvider>
