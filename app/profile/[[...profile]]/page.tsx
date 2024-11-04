@@ -8,7 +8,7 @@ const Page = async () => {
   const isAuth = !!userId;
 
     if (!isAuth) {
-        redirect("/");
+        redirect("/sign-in");
     }
   return (
     <div className="flex flex-col items-center justify-center h-full mt-8">
